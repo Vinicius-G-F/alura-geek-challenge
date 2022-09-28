@@ -61,6 +61,7 @@ a {
     
     background-image: url(img/Hero.png);
     background-size: cover;
+    background-position-x: center;
     background-repeat: no-repeat;
     color: var(--branco);
 }
@@ -138,6 +139,10 @@ a {
 
 .caixa__elementos img, .caixa__elementos p {
     margin-bottom: 0.5em;
+}
+
+.caixa__elementos img {
+    width: 43vw;
 }
 
 .produtos div section p:nth-child(2) {
