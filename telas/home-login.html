@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../assets/css/reset.css">
+        <link rel="stylesheet" href="../assets/css/style-login.css">
+        <link rel="stylesheet" href="../assets/css/style.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <title>AluraGeek Challenge</title>
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <a href="../index.html" class="cabecalho__link"><img src="../assets/img/Logo.png" alt="" class="cabecalho__logo"></a>
+            <div class="cabecalho__busca">
+                <input type="button" value="" class="busca__botao" id="busca__botao">
+                <input type="text" class="busca__texto" id="busca__texto" placeholder="O que deseja encontar?">
+            </div>
+        </header>
+        <main>
+            <form class="login-formulario">
+                <legend>Iniciar Sessão</legend>
+                <input type="email" placeholder="Escreva seu email" required class="email-usuario">
+                <div class="login__senha">
+                    <input type="password" placeholder="Escreva sua senha" required class= "senha-usuario">
+                </div>
+                <input type="submit" id="enviar-login" value="Entrar">
+            </form>
+        </main>
+        <footer class="rodape">
+            <section class="rodape__conteudo">
+                <div class="rodape__container">
+                    <img src="../assets/img/Logo-footer.png" alt="">
+                    <nav>
+                        <ul class="rodape__lista">
+                            <li><a href="#">Quem somos nós</a></li>
+                            <li><a href="#">Política de privacidade</a></li>
+                            <li><a href="#">Programa fidelidade</a></li>
+                            <li><a href="#">Nossas lojas</a></li>
+                            <li><a href="#">Quero ser franqueado</a></li>
+                            <li><a href="#">Anuncie aqui</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <form class="rodape__formulario">
+                    <legend class="rodape__legenda">Fale Conosco</legend>
+                    <div class="input-nome-cliente">
+                        <label for="nome-cliente">Nome</label>
+                        <input type="text" id="nome-cliente" class="input-padrao" required>
+                    </div>
+                    <textarea cols="30" rows="5" class="input-padrao" required placeholder="Escreva sua mensagem"></textarea>
+                    <input type="submit" value="Enviar mensagem" class="enviar">
+                </form>
+            </section>
+            <div class="rodape__texto">
+                <p class="rodape__paragrafo">Desenvolvido por Fulana de Tal<br>2021</p>
+            </div>
+        </footer>
+    </body>
+</html>
