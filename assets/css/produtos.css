@@ -1,0 +1,116 @@
+.fade-out {
+    transition: 1s;
+    opacity: 0;
+}
+
+.todos-produtos {
+    padding: 10vw 7vw 7vw 7vw;
+    
+}
+
+.todos-produtos h1 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 4vw;
+    color: var(--preto);
+}
+
+.todos-produtos__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.adicionar-botao {
+    background-color: var(--azul);
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--branco);
+    padding: 1em;
+    margin-bottom: 2vw;
+}
+
+.lista {
+    gap: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.lista__item {
+    display: flex;
+    flex-direction: column;
+    margin: 1vh 0;
+    width: 40.5vw;
+}
+
+.item__caixa {
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-end;
+}
+
+.caixa__botao {
+    margin-top: 5%;
+    height: 18%;
+    width: 18%;
+    border-radius: none;
+    border: none;
+    background: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center;
+}
+
+.caixa__botao--deletar {
+    margin-right: 5%;
+    background-image: url('../img/deletar-butao.png');
+}
+
+.caixa__botao--editar {
+    background-image: url('../img/editar-butao.png');
+}
+
+.item__titulo, .item__id {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.item__preço {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 0.4em;
+}
+
+
+@media screen and (min-width: 768px) {
+    .todos-produtos__container{
+        flex-direction: row;
+    }
+    
+    .lista__item {
+        width: 19.4vw;
+    }
+    
+    .item__caixa {
+        height: 25vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .lista__item {
+        width: 13.6vw;
+
+    }
+
+    .item__caixa {
+        height: 30vh;
+    }
+
+    
+}

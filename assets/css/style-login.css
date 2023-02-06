@@ -1,0 +1,56 @@
+#container-botao {
+    display: none;
+}
+
+.titulo-principal {
+    margin-top: 3em;
+    width: 80vw
+}
+
+.busca {
+    margin: auto;
+}
+
+.login-formulario {
+    text-align: center;
+    justify-content: center;
+    text-justify: center;
+    padding: 5em 0;
+}
+
+.login-formulario legend {
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.login-formulario input {
+    margin-bottom: 0.5em;
+    border: none;
+    padding: 0.5em;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#enviar-login {
+    background-color: var(--azul);
+    padding: 0.8em 1.5em;
+    color: var(--branco);
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho h1 {
+        margin-left: 5vw;
+        width: 35vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho h1 {
+        margin-left: 10vw;
+        width: 38vw;
+    }
+    #enviar-login {
+        padding: 0.8em 6.2em;
+    }
+}

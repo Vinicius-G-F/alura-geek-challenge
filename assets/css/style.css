@@ -1,0 +1,507 @@
+:root {
+    --cinza: #A2A2A2;
+    --branco: #FFFFFF;
+    --azul: #2A7AE4;
+    --fonte-padrao: 'Raleway', sans-serif;
+    --preto: #464646;
+    --cor-de-fundo: #f5f5f5;
+    --azul-claro-fundo: #EAF2FD;
+}
+
+.container {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.lista__pesquisa{
+    width: 90%;
+    height: 15vh;
+    margin-bottom: 0;
+}
+
+.item-pesquisado {
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    font-weight: 700;
+    color: red;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+}
+
+main {
+    background-color: var(--cor-de-fundo);
+    padding-bottom: 0.001em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    justify-content: space-between;
+    margin: 0 2em;
+}
+
+.cabecalho__logo {
+    display: inline;
+    width: 100px;
+    padding: 1rem;
+}
+
+.botao-login {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    border: 1.2px solid var(--azul);
+    color: var(--azul);
+    box-sizing: border-box;
+    padding: 0.8rem 2rem;
+}
+
+.busca__texto {
+    display: none;
+    padding: 1.5vw 0;
+    border: none;
+    background: none;
+    box-sizing: border-box;
+    width: 80vw;
+    
+    background-image: url(../../assets/img/Icone-opaco.svg);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: center;       
+    border: transparent;
+    border-radius: 5em;
+    background-color: var(--cor-de-fundo);
+}
+
+.busca__botao {
+    background-image: url(../img/Icone.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
+    padding: 0.5em 2em;
+    background-color: var(--branco);
+    border: none;
+}
+
+.caixa {
+    
+    background-image: url(../img/Hero.png);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    color: var(--branco);
+    height: 30vh;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 2em;
+    margin-bottom: 1rem;
+}
+
+.conteudo-inicial {
+    padding: 1em;
+}
+
+.conteudo-inicial p {
+    margin-bottom: 0.5em;
+}
+
+.conteudo-inicial__botao {
+    border: 1px solid var(--azul);
+    display: inline-block;
+    background-color: var(--azul);
+    padding: 1em 2em 1em 1em;
+}
+
+.conteudo-inicial__titulo {
+    margin-bottom: 0.5em;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.conteudo-inicial p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.conteudo-inicial a {
+    color: var(--branco);
+    font-size: 14px;
+    font-weight: 600;
+}
+ 
+/*
+    PRODUTOS
+*/
+
+.produtos-por-categoria {
+    margin: 1em 1em;
+}
+
+.seção {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.seção__categoria {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.seção__link {
+    font-weight: 700;
+    font-size: 14px;
+    color: #2A7AE4;
+}
+
+.itens-pesquisados {
+    margin: 0 1em;
+}
+
+.produtos__lista, .produtos__lista--pesquisa {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+
+.lista__item {
+    margin-bottom: 1em;
+    width: 43.5vw;
+}
+
+.lista__item--pesquisa {
+    margin-bottom: 1em;
+    width: 43.5vw;
+}
+
+.lista__item--desktop {
+    display: none;
+}
+
+.item__imagem {
+    margin-bottom: 0.5em;
+    width: 100%;
+    height: 27vh;
+}
+
+.item__titulo {
+    margin-bottom: 0.5em;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.item__preco {
+    margin-bottom: 0.5em;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.item__link {
+    font-weight: 700;
+    font-size: 14px;
+    color: #2A7AE4;
+}
+
+/*
+    RODAPE
+*/
+
+.rodape__container {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.rodape__lista li {
+    margin-top: 0.5em;
+}
+
+.rodape__lista li a {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--preto);
+}
+
+.rodape__legenda {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--preto);
+
+}
+
+.rodape__formulario {
+    margin-left: 1em;
+    margin-top: 2em;
+}
+
+.rodape__formulario label {
+    margin-top: 1em;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--cinza)
+    
+}
+
+.input-nome-cliente {
+    width: 91vw;
+    background-color: #FFFFFF;
+    margin-bottom: 1em;
+}
+
+#nome-cliente {
+    border: none;
+    width: 90vw;
+}
+
+.rodape__formulario textarea {
+    border: none;
+    width: 90vw;
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    place-content: red;
+}
+
+.enviar {
+    margin: 1em 0;
+    padding: 1em;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--branco);
+    background-color: var(--azul);
+}
+
+.rodape__paragrafo {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--preto);
+}
+
+footer {
+    background-color: var(--azul-claro-fundo);
+}
+
+.rodape__container img {
+    margin-top: 0.5em;
+}
+
+.rodape__texto {
+    background-color: var(--branco);
+    padding: 3em 0;
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        justify-content: flex-start;
+        margin-right: 5vw;
+    }
+
+    .cabecalho__link {
+        order: -3;
+    }
+
+    .conteudo-inicial__titulo {
+        font-size: 52px;
+    }
+
+    .botao-login {
+        margin-left: auto;
+    }
+
+    .cabecalho__busca {
+        order: -1;
+        margin-left: 1em;
+        background-image: url(../img/Icone-opaco.svg);
+        background-repeat: no-repeat;
+        background-position-x: 90%;
+        background-position-y: center;
+        
+        border: transparent;
+        border-radius: 5em;
+        background-color: var(--cor-de-fundo);
+        width: 40vw;
+    }
+    
+    .cabecalho__logo {
+        order: -2;
+        width: 100px;
+    }
+
+    .busca__texto {
+        display: block;
+        padding: 1.5vw 4vw;
+        border: none;
+        background: none;
+
+    }
+    .busca__botao {
+        display:none;
+    }
+
+    .conteudo-inicial p {
+        margin-bottom: 1em;
+        font-weight: 700;
+        font-size: 22px;
+    }
+
+    .caixa {
+        height: 40vh;
+        padding-left: 2em;
+        margin-bottom: 2rem;
+    }
+
+    .produtos-por-categoria {
+        margin: 1em 6vw;
+    }
+
+    .produtos__lista{
+        gap: 0.5em;
+    }
+
+    .lista__item {
+        width: 21vw;
+
+    }
+    .lista__item--pesquisa{
+        width: 21vw;
+    }
+
+    .item__imagem {
+        height: 30vh;
+    }
+
+    .rodape section {
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+
+    .rodape__container {
+        text-align: left;
+        margin-left: 3em;
+        margin-top: 1em;
+    }   
+
+    .rodape__lista li {
+        margin-bottom: 2em;
+    }
+
+    .input-nome-cliente {
+        width: 55vw;
+    }
+
+    #nome-cliente {
+        width: 54vw;
+    }
+
+    .rodape__formulario textarea {
+        width: 55vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        padding-bottom: 5vw;
+    }
+
+    .cabecalho {
+        margin-left: 5vw;
+    }
+
+    .cabecalho__logo {
+        width: 120px;
+    }
+
+    .cabecalho__container-botao {
+        padding: 2em 5em;
+    }
+
+    .busca__texto {
+        padding: 1em 7em;
+    }
+
+    .botao-login {
+        font-weight: 400;
+        font-size: 16px;
+        padding: 1em 4em;
+    }
+
+    .caixa {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        height: calc(60vh - 5rem - 5em);
+        background-position-y:center;
+    }
+
+    .produtos__lista{
+        gap: 1.2em;
+    }
+
+    .lista__item {
+        width: 13vw;
+    }
+
+    .lista__item--pesquisa {
+        width: 13vw;
+    }
+
+    .item__imagem {
+        height: 32vh;
+    }
+
+    .lista__item--desktop{
+        width: 13vw;
+        display: block;
+    }
+
+    .itens-pesquisados {
+        margin: 0 6vw;
+    }
+
+    .rodape {
+        padding-top: 3em;
+        
+    }
+
+    .rodape section {
+        margin-left: 6.2vw;
+        display: grid;
+        grid-template-columns: 50% 20%;
+    }
+
+    .rodape__container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .input-nome-cliente {
+        width: 40vw
+    }
+
+    .rodape__formulario textarea {
+        width: 40vw;
+    }
+    
+    #nome-cliente {
+        width: 39vw;
+    }
+}
+
+
+
+
+
+

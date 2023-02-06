@@ -1,0 +1,79 @@
+.cabecalho{
+    margin:0;
+}
+
+.cabecalho__link-menu {
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+    padding: 12px 16px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.adicionar {
+    margin: 0 1em;
+    padding: 1em 0;
+}
+
+.adicionar__titulo {
+    font-weight: 700;
+    font-size: 22px;
+    color: #464646;
+}
+
+.adicionar__campo {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+    background-color: #FFFFFF;
+}
+
+.adicionar__campo:nth-child(6){
+    margin-bottom: 0.5em;
+}
+
+.campo__legenda {
+    font-weight: 400;
+    font-size: 12px;
+    color:  #A2A2A2;
+    margin: 1em;
+}
+
+.campo__input {
+    border: none;
+}
+
+.adicionar__mensagem {
+    display: flex;
+    color: var(--preto);
+    font-weight: 700;
+    justify-content: center;
+    margin-bottom: 0.5em ;
+}
+
+.adicionar__botao {
+    width: 100%;
+    border: none;
+    background-color: #2A7AE4;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    height: 51px;
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho__link-menu {
+        margin-left: auto;
+        margin-right: 1em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .formulario-container {
+        width: 559px;
+        margin: 0 auto;
+    }
+    .cabecalho {
+        margin: 0 6.2vw;
+    }
+}
