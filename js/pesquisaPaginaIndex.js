@@ -41,18 +41,18 @@ buscaTexto.addEventListener('keypress', async (e) =>{
         textoPesquisado.innerHTML = `Voce procurou por: "${buscaTexto.value}" <button id="item-pesquisado" class="item-pesquisado">limpar filtro (X)</button>`
         try {
             const listaProdutos = await conectaApi.buscaProdutos(buscaTexto.value)
+            mostraProdutos.montaListaProdutosIndex(listaProdutos)
+            const botaoApagarPesquisa = document.getElementById('item-pesquisado')
+            botaoApagarPesquisa.style.marginBottom = '1rem'
+            botaoApagarPesquisa.addEventListener('click', ()=>{
+                elementoLista.style.display = 'block'
+                itemPesquisado.innerHTML = ''
+                textoPesquisado.innerHTML = ''
+                buscaTexto.value = ''  
+            })
+            window.location.href = '#lista__pesquisa'
         } catch (e){
             alert(e)
         }
-        mostraProdutos.montaListaProdutosIndex(listaProdutos)
-        const botaoApagarPesquisa = document.getElementById('item-pesquisado')
-        botaoApagarPesquisa.style.marginBottom = '1rem'
-        botaoApagarPesquisa.addEventListener('click', ()=>{
-            elementoLista.style.display = 'block'
-            itemPesquisado.innerHTML = ''
-            textoPesquisado.innerHTML = ''
-            buscaTexto.value = ''  
-        })
-        window.location.href = '#lista__pesquisa'
     }
 })
