@@ -1,6 +1,6 @@
 # Alura Geek Challenge
 
-descrição aqui.
+Projeto ministrado pela Alura, feito com o propósito de desafiar e instigar os alunos a praticarem aquilo que foi aprendido durante os cursos da escola de programação da Alura.
 
 | 🪧 Vitrine Dev |  |
 | ------------- | - |
@@ -11,7 +11,10 @@ descrição aqui.
 
 ![](./alura-geek.png#vitrinedev)
 
-## Detalhes do projeto
+## Detalhes do desafio front-end da Alura
 
-Textos e imagens que descrevam seu projeto, suas conquistas, seus desafios, próximos passos, etc...
+O projeto consta com um modelo do figma, cards do trello, lives semanalmente com intrutores e consultoria com outros alunos da Alura, para que os alunos possam exercitar e mostrar tudo aquilo que eles aprenderam durante seus estudos em um ambiente o mais próximo póssivel de um projeto real.
 
+Nele, os participantes são encorajados a utilizar tudo que aprenderam das tecnologias de front-end para tornar o site o mais fiel ao modelo do figma ou se assim desejar, fazer quaisquer alterações para deixar o projeto o mais original possível.
+
+Por ser meu primeiro projeto, eu acabei usando apenas html, css e JavaScript, sem o uso de nenhum framework.
